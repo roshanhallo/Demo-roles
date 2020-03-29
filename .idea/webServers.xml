@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="2b9f25fb-9e80-4f99-9575-6f8c667566d5" name="aws-controller" url="http://3.81.173.250">
+        <fileTransfer host="3.81.173.250" port="22" privateKey="C:\Users\Rosh\Downloads\ansiblertbnw.ppk" accessType="SFTP" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

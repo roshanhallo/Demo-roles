@@ -1,0 +1,18 @@
+    - name: 'Install Flask Dependencies'
+      pip:
+        name: flask
+        state: present
+      become: true
+      become_method: sudo
+
+
+    - name: 'Install Flask Mysql Dependencies'
+      pip:
+        name: flask-mysql
+        state: present
+
+    - name: 'Copy the source code over server'
+      copy: src=app.py dest=/opt/app.py
+
+    - name: 'Start the web server'
+      shell: FLASK_APP=/opt/app.py nohup flask run --host=0.0.0.0 &

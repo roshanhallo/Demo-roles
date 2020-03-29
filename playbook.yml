@@ -1,0 +1,8 @@
+- name: 'Deploy web-app on the host server'
+  hosts: db_web_server
+  become: true
+  become_method: sudo
+  roles:
+    - python
+    - mysql_db
+    - web_app

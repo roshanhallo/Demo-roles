@@ -1,0 +1,8 @@
+    - name: 'Install all the requried dependencies'
+      apt: name={{ item }} state=latest
+      with_items:
+         - python
+         - python-setuptools
+         - python-dev
+         - build-essential
+         - python-pip
